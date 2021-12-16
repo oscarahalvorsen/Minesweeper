@@ -16,6 +16,8 @@
 
 .App-header {
   color: white;
+  font-size: calc(24px + 2vmin);
+  
 }
 
 .App-link {
