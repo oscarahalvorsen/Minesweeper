@@ -1,8 +1,8 @@
-import logo from './images/Air.png';
+import logo from './images/Bomb.png';
 
-const Tile = () => {
+const Tile = (props) => {
     return (
-        <img src={logo} alt="Air image"></img>
+        <img src={logo} alt="img"></img>
     )
 }
 

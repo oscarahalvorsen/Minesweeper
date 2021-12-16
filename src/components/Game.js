@@ -2,9 +2,12 @@ import logo from './images/Air.png';
 import Tile from './Tile.js';
 
 const Game = () => {
+    const [tiles, setTiles] = [];
+    
+
+
     return (
         <div>
-            <img src={logo} alt="Air image"></img>
             <Tile/>
         </div>
     )
