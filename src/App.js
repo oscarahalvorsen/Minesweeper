@@ -1,6 +1,6 @@
 import './App.css';
-import Header from "./components/Header.js"
-import Game from "./components/Game.js"
+import Header from "./components/Header.jsx"
+import Game from "./components/Game.jsx"
 
 function App() {
   return (
