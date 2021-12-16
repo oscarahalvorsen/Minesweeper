@@ -1,12 +1,11 @@
 import logo from './images/Air.png';
-import React from 'react'
+import Tile from './Tile.js';
 
 const Game = () => {
-    
-
     return (
         <div>
             <img src={logo} alt="Air image"></img>
+            <Tile/>
         </div>
     )
 }
