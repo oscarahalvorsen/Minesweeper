@@ -20,11 +20,9 @@
   
 }
 
-
 .row {
   display: flex;
   flex-wrap: wrap;
-  background-color: green;
 }
 
 /* Create two equal columns that sits next to each other */
@@ -38,6 +36,7 @@
   margin-top: -1px;
   margin-bottom: -1px;
   vertical-align: middle;
+  position: relative;
 }
 
 
@@ -53,3 +52,16 @@
     transform: rotate(360deg);
   }
 }
+
+.board {
+  position: relative;
+  z-index: 0;
+}
+
+.tiles {
+  position: relative;
+  bottom: 407px;
+  right: 302px;
+  z-index: 1;
+}
+

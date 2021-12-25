@@ -1,7 +1,9 @@
 const Board = ({size}) => {
     var board = require("./images/MineField" + size + ".png")
     return (
-        <img src={board} alt ="Board"></img>
+        <div>
+            <img src={board} alt ="Board" className="board"></img>
+        </div>
     )
 }
 

@@ -21,44 +21,112 @@ const Tiles = ({level}) => {
             covered: false,
         },
         {
-            number: 0,
+            number: 1,
             covered: false,
         },
 
     ])
     return (
-        <div class="row">
-            <div class="column">
-                {tiles.map(({number, covered}) => (
-                    <Tile number={number} covered={covered}/>
-                    ))
-                }
-            </div>
-            <div class="column">
-                {tiles.map(({number, covered}) => (
-                    <Tile number={number} covered={covered}/>
-                    ))
-                }
-            </div>
-            <div class="column">
-                {tiles.map(({number, covered}) => (
+        <div className="tiles">
+            <div class="row">
+                <div class="column">
+                    {tiles.map(({number, covered}) => (
                         <Tile number={number} covered={covered}/>
                         ))
-                    } 
-            </div>
-            <div class="column">
-                {tiles.map(({number, covered}) => (
-                    <Tile number={number} covered={covered}/>
-                    ))
-                }
-            </div>
-            <div class="column">
-                {tiles.map(({number, covered}) => (
-                    <Tile number={number} covered={covered}/>
-                    ))
-                }  
-            </div>
-        </div>    
+                    }
+                </div>
+                <div class="column">
+                    {tiles.map(({number, covered}) => (
+                        <Tile number={number} covered={covered}/>
+                        ))
+                    }
+                </div>
+                <div class="column">
+                    {tiles.map(({number, covered}) => (
+                            <Tile number={number} covered={covered}/>
+                            ))
+                        } 
+                </div>
+                <div class="column">
+                    {tiles.map(({number, covered}) => (
+                        <Tile number={number} covered={covered}/>
+                        ))
+                    }
+                </div>
+                <div class="column">
+                    {tiles.map(({number, covered}) => (
+                        <Tile number={number} covered={covered}/>
+                        ))
+                    }  
+                </div>
+                <div class="column">
+                    {tiles.map(({number, covered}) => (
+                        <Tile number={number} covered={covered}/>
+                        ))
+                    }  
+                </div>
+                <div class="column">
+                    {tiles.map(({number, covered}) => (
+                        <Tile number={number} covered={covered}/>
+                        ))
+                    }  
+                </div>
+                <div class="column">
+                    {tiles.map(({number, covered}) => (
+                        <Tile number={number} covered={covered}/>
+                        ))
+                    }  
+                </div>
+                <div class="column">
+                    {tiles.map(({number, covered}) => (
+                        <Tile number={number} covered={covered}/>
+                        ))
+                    }  
+                </div>
+                <div class="column">
+                    {tiles.map(({number, covered}) => (
+                        <Tile number={number} covered={covered}/>
+                        ))
+                    }  
+                </div>
+                <div class="column">
+                    {tiles.map(({number, covered}) => (
+                        <Tile number={number} covered={covered}/>
+                        ))
+                    }  
+                </div>
+                <div class="column">
+                    {tiles.map(({number, covered}) => (
+                        <Tile number={number} covered={covered}/>
+                        ))
+                    }  
+                </div>
+                <div class="column">
+                    {tiles.map(({number, covered}) => (
+                        <Tile number={number} covered={covered}/>
+                        ))
+                    }  
+                </div>
+                <div class="column">
+                    {tiles.map(({number, covered}) => (
+                        <Tile number={number} covered={covered}/>
+                        ))
+                    }  
+                </div>
+                <div class="column">
+                    {tiles.map(({number, covered}) => (
+                        <Tile number={number} covered={covered}/>
+                        ))
+                    }  
+                </div>
+                <div class="column">
+                    {tiles.map(({number, covered}) => (
+                        <Tile number={number} covered={covered}/>
+                        ))
+                    }  
+                </div>
+            </div>   
+        </div> 
     )
 }
 
