@@ -6,6 +6,9 @@ export default class App extends Component {
         super(props)
     }
     render() {
-        return (<h1>Testing djangofolder.frontend.src.components.App.js</h1>)
+        return <h1>Testing djangofolder.frontend.src.components.App.js</h1>
     }
 }
+
+const appDiv = document.getElementById("app")
+render(<App />, appDiv)
