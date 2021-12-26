@@ -1,6 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from rest_framework import generics
+from .serializers import TileSerializer
+from .models import Tile
 
 # Create your views here.
-def main(request):
-    return HttpResponse("<h1>Hello<h1>")
+class TileView(generics.ListAPIView):
+    queryset = Tile.objects.all()  
+    serializer_class = TileSerializer
