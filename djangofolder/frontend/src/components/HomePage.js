@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import InfoPage from "./InfoPage";
 import GamePage from "./GamePage";
 import { BrowserRouter as Router, Routes, Route, Link, Redirect } from "react-router-dom";
 
@@ -10,8 +11,9 @@ export default class HomePage extends Component {
     render() {
         return (
             <Router>
-                <h1>hei på deg 1</h1>
-                <Routes><Route path='/gamepage' element={<GamePage/>}/></Routes>
+                <Routes>
+                    <Route exact path="/" element={<InfoPage />} />
+                    <Route path='/gamepage' element={<GamePage/>}/></Routes>
             </Router>
         )
     }
