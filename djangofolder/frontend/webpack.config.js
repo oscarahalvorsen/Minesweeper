@@ -25,7 +25,8 @@ module.exports = {
     new webpack.DefinePlugin({
       "process.env": {
         // This has effect on the react lib size
-        NODE_ENV: JSON.stringify("production"),
+        //NV, changed production to development, this may have unknown fatal consequences
+        NODE_ENV: JSON.stringify("development"),
       },
     }),
   ],
