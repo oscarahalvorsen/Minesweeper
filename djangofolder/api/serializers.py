@@ -6,5 +6,9 @@ class TileSerializer(serializers.ModelSerializer):
         model = Tile
         fields = ("x", "y", "type", "covered", "flag", "tempUncovered")
 
-
+class CreateTileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Tile
+        fields = ("covered", "flag", "tempUncovered")
+        
 
