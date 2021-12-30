@@ -1,13 +1,13 @@
 import Board from './Board.jsx'
-import Tiles from './Tiles.jsx'
+import TilesView from './TilesView.jsx'
 
-const Game = () => {
+const GameView = () => {
     return (
         <div className='Game'>
             <Board size="3"/>
-            <Tiles level="3"/>
+            <TilesView level="3"/>
         </div>
     )
 }
 
-export default Game
+export default GameView
