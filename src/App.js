@@ -6,10 +6,11 @@ import Tile from "./core/Tile.jsx"
 import Game from "./core/Game.jsx"
 
 function App() {
+ 
   return (
     <div className="App">
       <Header/>
-      <TilesView/>
+      <TilesView level={3}/>
     </div>
   );
 }

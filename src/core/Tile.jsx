@@ -13,9 +13,9 @@ export class Tile {
         this.type=n
     }
 
-    isAir = () => this.type==0
+    isAir = () => this.type===0
 
-    isBomb = () => this.type==9
+    isBomb = () => this.type===9
 
     setBomb = () => {this.type=9}
 

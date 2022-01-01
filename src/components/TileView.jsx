@@ -1,6 +1,11 @@
-const TileView = ({number, covered}) => {
+const TileView = ({game, number, covered, x, y}) => {
     var image = require('./images/' + (covered ? 'Covered' : 'Uncovered' + number) + '.png');
-    return <img src={image} alt="Tile"></img>
+    const onClick = () => {
+        game.uncover(x, y)
+        console.log("onClick: " + x + ":" + y)
+        
+    }
+    return <img src={image} alt="Tile" onClick={onClick}/>
 }
 
 TileView.defaultProps = {

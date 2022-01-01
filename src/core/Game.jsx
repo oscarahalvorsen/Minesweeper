@@ -1,7 +1,7 @@
 import {Tile} from "./Tile.jsx"
 
 export class Game {
-    constructor(height, width, bombNr) {
+    constructor(width, height, bombNr) {
         this.height=height
         this.width=width
         this.bombNr=bombNr
@@ -20,7 +20,7 @@ export class Game {
 
     getTile = (x, y) => {
         if (!this.isTileValid(x, y)) {
-            throw new RangeError("Coordinates must be at least 0 and less than max.")
+            throw new RangeError("Coordinates must be at least 0 and less than max. Your coordinates were " + x + ":" + y + "while max is " + this.getWidth() + ":" + this.getHeight())
         }
         return this.board[y][x]
     }
@@ -66,6 +66,7 @@ export class Game {
     }
     
     uncover = (x, y) => {
+        console.log("uncover" + x + ":" + y)
         let tile = this.getTile(x, y)
         if (tile.isCovered() && !tile.isFlag()) {
             tile.uncover()
@@ -101,10 +102,10 @@ export class Game {
             }
             for (let j=-1; j<2; j++) {
                 for (let i=1; i<2; i++) {
-                    if (i!==0 || j!=0) {
+                    if (i!==0 || j!==0) {
                         if (this.isTileValid(x+i, y+j)) {
                             if (!tile.isFlag()) {
-                                if (nearbyFlagCount==tile.getType()) {
+                                if (nearbyFlagCount===tile.getType()) {
                                     this.uncover(x+i, y+j)
                                 }
                             }
@@ -148,6 +149,3 @@ export class Game {
         return string
     }
 }
-
-let game = new Game(8,10,8)
-console.log(game.toString())
